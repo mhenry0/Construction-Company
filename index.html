@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title of the Website -->
+        <title>PaloVerde Constructora</title>
+    
+        <!-- Favicon -->
+        <link rel="icon" href="/blackbg.svg" type="image/x-icon">
+        <!-- For other formats, you can use -->
+        <!-- <link rel="icon" href="/path-to-your-logo/logo.png" type="image/png"> -->
+        <!-- Or for SVG -->
+        <!-- <link rel="icon" href="/path-to-your-logo/logo.svg" type="image/svg+xml"> -->
+    
+        <!-- Meta Description for SEO -->
+        <meta name="description" content="PaloVerde Constructora specializes in sustainable construction and development in Costa Rica, offering high-quality residential and commercial projects with a focus on eco-friendly practices.">
+    
+        <!-- Meta Keywords for SEO -->
+        <meta name="keywords" content="construction, sustainable building, eco-friendly construction, residential projects, commercial projects, Costa Rica, green building, construction company, building services, PaloVerde Constructora">
+    
+        <!-- Meta Author -->
+        <meta name="author" content="PaloVerde Constructora">
+    
+        <!-- Stylesheets -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/ccs/styles.css">
+    </head>
+    
+    
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="/blackbg.svg" alt="PaloVerde Logo" style="max-height: 60px; margin-right: 10px;">
+            PaloVerde
+        </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                
+                <!-- Icon button to toggle translation element -->
+                <button class="btn btn-link" onclick="toggleTranslate()" aria-expanded="false" style="font-size: 1.5rem;">
+                    <i class="fas fa-globe"></i>
+                </button>
+
+                <!-- Translation element, initially hidden -->
+                <div id="translateContainer" style="display: none; text-align: center;">
+                    <div id="google_translate_element"></div>
+                </div>
+
+                <!-- Translation script -->
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                    }
+
+                    // Function to toggle the translation element
+                    function toggleTranslate() {
+                        const translateContainer = document.getElementById('translateContainer');
+                        translateContainer.style.display = translateContainer.style.display === 'none' ? 'block' : 'none';
+                    }
+                </script>
+
+                <!-- Load Google Translate script -->
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Hero Section with Auto Slider -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <!-- First Slide -->
+      <div class="carousel-item active">
+        <div class="hero d-flex justify-content-center align-items-center text-center" style="min-height: 100vh; background-color: #f4f4f4;">
+            <div>
+              <h1 class="display-4">Building Your Vision</h1>
+              <p class="lead">Transforming your ideas into reality with precision and passion</p>
+              <a href="#find-us" class="btn btn-primary btn-lg mt-3">Contact Us</a>
+            </div>
+          </div>
+          
+      </div>
+      <!-- Second Slide (Optional) -->
+      <div class="carousel-item">
+        <div class="hero d-flex justify-content-center align-items-center text-center" style="min-height: 100vh; background-color: #f4f4f4;">
+            <div>
+              <h1 class="display-4">Building Your Vision</h1>
+              <p class="lead">Transforming your ideas into reality with precision and passion</p>
+              <a href="#find-us" class="btn btn-primary btn-lg mt-3">Contact Us</a>
+            </div>
+          </div>
+          
+      </div>
+      <!-- Third Slide (Optional) -->
+      <div class="carousel-item">
+        <div class="hero d-flex justify-content-center align-items-center text-center" style="min-height: 100vh; background-color: #f4f4f4;">
+            <div>
+              <h1 class="display-4">Building Your Vision</h1>
+              <p class="lead">Transforming your ideas into reality with precision and passion</p>
+              <a href="#find-us" class="btn btn-primary btn-lg mt-3">Contact Us</a>
+            </div>
+          </div>
+          
+      </div>
+    </div>
+  
+    <!-- Carousel Controls (Optional) -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+
+<section id="introduction" class="py-5">
+    <div class="container text-center">
+        <a class="navbar-brand" href="#">
+            <img src="blackbg.svg" alt="PaloVerde Logo" style="max-height: 250px; margin-right: 10px;">
+            
+        </a>
+        <h2 class="mb-4">Building Dreams Brick by Brick</h2>
+        <p>
+            Welcome to <strong>PaloVerde Constructora</strong>, a leading construction company proudly based in the heart of Osa, Costa Rica. With a commitment to excellence and sustainability, we specialize in delivering high-quality residential, commercial, and industrial projects tailored to the unique needs of our clients. Our team of experienced professionals is dedicated to building not just structures, but lasting relationships through innovative designs, precise craftsmanship, and an unwavering dedication to safety and environmental stewardship. At PaloVerde Constructora, we transform visions into reality, helping to shape the future of Osa with each project we undertake.
+        </p>
+    </div>
+</section>
+
+
+<!-- Contador Animado: Años de Experiencia -->
+<div class="experience-counter">
+    <span id="experienceCount">+0</span>
+    <p>Years of Experience</p>
+</div>
+
+<!-- Contador Animado: Clientes Satisfechos -->
+<div class="satisfied-counter">
+    <span id="clientsCount">+0</span>
+    <p>Finished Projects</p>
+</div>
+
+<style>
+    .experience-counter, .satisfied-counter {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin-top: 10px;
+    }
+
+    .experience-counter span, .satisfied-counter span {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #f8c200; /* Yellow color */
+    }
+
+    .experience-counter p, .satisfied-counter p {
+        font-size: 1.5rem;
+        margin-top: 5px;
+        color: #555;
+    }
+
+    /* Animation */
+    @keyframes countUp {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.1);
+        }
+    }
+</style>
+
+<script>
+    // Counter for Years of Experience
+    function updateExperienceCounter() {
+        const countElement = document.getElementById('experienceCount');
+        let count = 0;
+        const target = 10; // Final number for this counter
+        const increment = 100; // Interval in milliseconds
+
+        function incrementCounter() {
+            if (count < target) {
+                count++;
+                countElement.innerText = `+${count}`;
+                setTimeout(incrementCounter, increment);
+            }
+        }
+
+        incrementCounter();
+    }
+
+    // Counter for Satisfied Clients
+    function updateClientsCounter() {
+        const countElement = document.getElementById('clientsCount');
+        let count = 0;
+        const target = 500; // Final number for this counter
+        const increment = 1; // Interval in milliseconds
+
+        function incrementCounter() {
+            if (count < target) {
+                count++;
+                countElement.innerText = `+${count}`;
+                setTimeout(incrementCounter, increment);
+            }
+        }
+
+        incrementCounter();
+    }
+
+    // Initialize both counters
+    window.onload = () => {
+        updateExperienceCounter();
+        updateClientsCounter();
+    };
+</script>
+
+<!-- Services Section -->
+<section id="services" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-5">Our Expertise in Construction</h2>
+        <div class="row g-4">
+            <!-- Commercial Construction -->
+            <div class="col-md-4">
+                <div class="service-item p-4 shadow-lg rounded bg-white">
+                    <i class="service-icon fas fa-building mb-3" style="font-size: 3rem; color: #0d22ad;"></i>
+                    <h4 class="mb-3">Commercial Construction</h4>
+                    <p>Our team provides reliable and efficient construction services for offices, retail spaces, and large-scale commercial projects. We focus on delivering high-quality structures that meet your business needs.</p>
+                </div>
+            </div>
+            <!-- Residential Projects -->
+            <div class="col-md-4">
+                <div class="service-item p-4 shadow-lg rounded bg-white">
+                    <i class="service-icon fas fa-home mb-3" style="font-size: 3rem; color: #0d22ad;"></i>
+                    <h4 class="mb-3">Residential Projects</h4>
+                    <p>We specialize in designing and building custom homes that reflect your vision, with expert craftsmanship and meticulous attention to detail. Let us create your dream home from the ground up.</p>
+                </div>
+            </div>
+            <!-- Renovations & Remodels -->
+            <div class="col-md-4">
+                <div class="service-item p-4 shadow-lg rounded bg-white">
+                    <i class="service-icon fas fa-tools mb-3" style="font-size: 3rem; color: #0d22ad;"></i>
+                    <h4 class="mb-3">Renovations & Remodels</h4>
+                    <p>Transform your existing space with our professional renovation services. Whether it’s a kitchen, bathroom, or full-home remodel, we bring innovation and quality craftsmanship to every project.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="portfolio" class="py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Our Portfolio</h2>
+        <div class="row g-4 justify-content-center">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./construction.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./construction2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./construction3.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accordion Section for Description -->
+    <div class="container text-center mt-5">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Read About the Project
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        We specialize in delivering exceptional construction services with innovative and sustainable solutions, transforming your ideas into reality. Our team works on residential, commercial, and renovation projects, focusing on quality and client satisfaction.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Add Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+<!-- About Us Section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <h2>About Us</h2>
+                <p>With over 8 years of experience in construction, PaloVerde has built a reputation for delivering exceptional quality in every project we undertake. We specialize in commercial, residential, and renovation construction, always focused on customer satisfaction and innovation.</p>
+                <a href="#quote" class="btn btn-primary btn-md">Get a Quote Now</a>
+            </div>
+        
+            <!-- Separator (Added only for small screens) -->
+            <div class="w-100 d-md-none mb-4"></div> <!-- This ensures the separation on small screens -->
+        
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="About Us">
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section id="client-reviews" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-5">What Our Clients Say</h2>
+        <div class="row">
+            <!-- Review 1 -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="review-item p-4 shadow-lg rounded bg-white">
+                    <img src="https://via.placeholder.com/100" alt="Client 1" class="rounded-circle mb-3" style="width: 100px; height: 100px;">
+                    <h5 class="mb-2">John Doe</h5>
+                    <p class="font-italic">"PaloVerde turned our vision into reality. The team was professional, timely, and always kept us informed throughout the process. Highly recommend them for any commercial project."</p>
+                </div>
+            </div>
+            <!-- Review 2 -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="review-item p-4 shadow-lg rounded bg-white">
+                    <img src="https://via.placeholder.com/100" alt="Client 2" class="rounded-circle mb-3" style="width: 100px; height: 100px;">
+                    <h5 class="mb-2">Jane Smith</h5>
+                    <p class="font-italic">"The PaloVerde team exceeded our expectations in building our new home. From design to execution, they were attentive to every detail and ensured our complete satisfaction."</p>
+                </div>
+            </div>
+            <!-- Review 3 -->
+            <div class="col-md-4">
+                <div class="review-item p-4 shadow-lg rounded bg-white">
+                    <img src="https://via.placeholder.com/100" alt="Client 3" class="rounded-circle mb-3" style="width: 100px; height: 100px;">
+                    <h5 class="mb-2">Mark Johnson</h5>
+                    <p class="font-italic">"I couldn’t be happier with the renovation of our office. PaloVerde's professionalism and quality of work made the entire process seamless. They truly care about their clients."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Where to Find Us Section -->
+<section id="contact" class="py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Where to Find Us</h2>
+        <p>We are located at the heart of the city, easily accessible by all forms of transport. Visit us to discuss your next project or to get a quote for your upcoming construction needs!</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Office Location</h5>
+                <p>123 Construction Lane, Suite 456, City, State, 12345</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Call Us</h5>
+                <p>+1 (555) 123-4567</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Email</h5>
+                <p>info@PaloVerde.com</p>
+            </div>
+            <div class="col-md-6">
+                <h5>WhatsApp</h5>
+                <p> WhatsApp: +1 (234) 567-890</p>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1682762723143!2d-122.33516708468164!3d47.60801377918598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906b7f90f0a7bb%3A0x25d5e4fdd306c679!2s123%20Construction%20Lane%2C%20Suite%20456%2C%20City%2C%20State%2C%2012345!5e0!3m2!1sen!2sus!4v1609770000000!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+
+
+<!-- Footer -->
+<footer class="py-5 bg-black text-white">
+    <div class="container">
+        <div class="row">
+            <!-- Company Info -->
+            <div class="col-md-4 mb-4">
+                <h5>PaloVerde Constructora</h5>
+                <p>For over two decades, PaloVerde constructora has been a leader in the construction industry, delivering exceptional projects with unparalleled precision. Our team is dedicated to providing tailored solutions that meet the unique needs of every client, ensuring excellence at every step.</p>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-md-4 mb-4">
+                <h5>Contact Information</h5>
+                <ul class="list-unstyled">
+                    <li><strong><i class="fas fa-envelope"></i> Email:</strong> <a href="mailto:info@PaloVerde.com" class="text-white text-decoration-none">info@PaloVerde.com</a></li>
+                    <li><strong><i class="fas fa-phone-alt"></i> Phone:</strong> <a href="tel:+1234567890" class="text-white text-decoration-none">+1 (234) 567-890</a></li>
+                    <li><strong><i class="fab fa-whatsapp"></i> WhatsApp:</strong> <a href="https://wa.me/1234567890" class="text-white text-decoration-none">+1 (234) 567-890</a></li>
+                    <li><strong><i class="fas fa-business-time"></i> Business Hours:</strong> Monday to Friday, 9 AM - 6 PM. Saturdays: 9 AM to 1 PM. Sundays: Closed</li>
+                </ul>
+                
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-md-4 mb-4">
+                <h5>Connect with Us</h5>
+                <div class="d-flex">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <img src="/logo.svg" alt="Logo" class="img-fluid" style="max-width: 20%; height: auto;">
+              </div>
+                      </div>
+        <hr class="my-4">
+        <div class="text-center">
+            <p>&copy; 2024 Nativa Innovations. All Rights Reserved.</p>
+            <p><a href="#" class="text-white text-decoration-none">Privacy Policy</a> | <a href="#" class="text-white text-decoration-none">Terms of Service</a></p>
+        </div>
+    </div>
+</footer>
