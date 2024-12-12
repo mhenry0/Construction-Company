@@ -17,7 +17,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: url('/construction3.webp') no-repeat center center;
+    background: url('./construction3.webp') no-repeat center center;
     background-size: cover;
     height: 100vh;
     display: flex;
