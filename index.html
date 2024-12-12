@@ -27,7 +27,105 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./ccs/styles.css">
-    </head>
+<style>
+        /* Global Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    line-height: 1.6;
+    font-family: 'Arial';
+}
+.navbar {
+    background-color: #ffffff;
+}
+.navbar-brand, .nav-link {
+    color: #000000 !important;
+}
+.navbar-toggler-icon {
+    background-color: #bdbcbc;
+}
+
+/* Hero Section */
+.hero {
+    background: url('./img/construction3.webp') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.hero h1 {
+    font-size: 4rem;
+}
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* Services Section */
+.service-icon {
+    font-size: 48px;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+.service-item {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 20px 0;
+}
+footer a {
+    color: #0d6efd;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Style for the floating WhatsApp button */
+.whatsapp-btn {
+position: fixed;
+bottom: 50px; /* Position it at the bottom of the screen */
+right: 20px;  /* Position it on the right side */
+background-color: #25D366; /* WhatsApp green */
+color: white;
+border-radius: 50%;
+padding: 15px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+font-size: 10px;
+z-index: 1000; /* Ensures the button is always on top */
+transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-btn:hover {
+transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.whatsapp-btn i {
+font-size: 35px;
+}
+
+
+</style>
+
+</head>
+    
     
     
 <body>
